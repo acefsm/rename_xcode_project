@@ -48,6 +48,9 @@ function replaceContentsOfFiles {
   IFS=$(echo -en "\n\b")
   for it in $(grep -RIl --exclude-dir={*Pods*,*Carthage*,.*,*build*,*fastlane*,*.a} --exclude={*DS_Store*,*.xcuserstate,*.png,*.jpg,*.json,*.appiconset} ${OLD_PROJECT_NAME} *)
   do
+    if [ -h "$it" ]; then
+      continue
+    fi
     beforeLastPath=${it%/*}
     lastPath=${it##*/}
     if [[ "$beforeLastPath" == "$lastPath" ]]; then
