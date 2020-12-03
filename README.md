@@ -9,7 +9,7 @@ Script goes through all the files and directories recursively, including Xcode p
 
 ```bash
 # download script and make it executable
-$ curl https://raw.githubusercontent.com/acefsm/rename_xcode_project/main/rename_xcode_project.sh -O rename_xcode_project.sh && chmod +x rename_xcode_project.sh
+$ curl https://raw.githubusercontent.com/acefsm/rename_xcode_project/main/rename_xcode_project.sh -o rename_xcode_project.sh && chmod +x rename_xcode_project.sh
 
 # run script
 $ ./rename_xcode_project.sh "$OLD_PROJECT_NAME" "$NEW_PROJECT_NAME"
