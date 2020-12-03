@@ -22,7 +22,7 @@ $ rm rename_xcode_project.sh
 ```
 
 ## Performance
-More than 150x (1️⃣5️⃣0️⃣) times faster than swift version
+More than 150x (1️⃣5️⃣0️⃣) times faster than [swift version](https://github.com/appculture/xcode-project-renamer)
 | Project | Bash time | Swift time|
 | ------ | ------ | ------ |
 | Kickstarter | 1.2 seconds  | 197 seconds |
